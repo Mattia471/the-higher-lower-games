@@ -1,0 +1,142 @@
+body {
+    overflow: hidden;
+}
+/*crea lo stile per un div contenitore che occupa tutta la pagina*/
+.container-full{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 99vh;
+}
+.sub-container-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*crea un contenitore che occopa il lato sinistro del contenitore padre*/
+.container-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: /*nero opaco*/ #162447;
+}
+/*crea un contenitore che occupa il lato destro del contenitore padre*/
+.container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: /*nero opaco*/ #1B1B2F;
+}
+/**stile cerchio sopra linea al centro del contenitore*!*/
+.circle {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #E43F5A;
+    z-index: 1000;
+    display: flex;
+    font-weight: bold;
+    color: #1B1B2F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
+    align-items: center;
+    justify-content: center;
+}
+/*stile rettangolo sopra linea a centro del contenitore e sotto il circle*/
+.rectangle {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    background-color: #E43F5A;
+    z-index: 1000;
+    display: flex;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(228, 63, 90, 0.9);
+}
+.text-bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #E43F5A;
+    font-weight: bold;
+    margin: 0px 20px 20px 0px;
+}
+.text-bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #E43F5A;
+    font-weight: bold;
+    margin: 0px 50px 20px 20px;
+}
+/*testo piu piccolo di quello sotto allineato al centro*/
+.text-follower-center-up {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: #E43F5A;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+}
+
+.text-follower-center {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6.5rem;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*button grande outlined con un bel stile*/
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+    padding: 5px 60px;
+    border: 2px solid #E43F5A;
+    border-radius: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background-color: #E43F5A;
+    color: white;
+}
+/*AL CLICK*/
+.button:active {
+    background-color: #E43F5A;
+    color: white;
+    transform: scale(0.9);
+}
